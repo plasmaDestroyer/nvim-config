@@ -1,0 +1,17 @@
+# .gitignore
+
+# Don't backup the actual plugin source code, just your config
+lua/lazy-lock.json 
+# (Optional: keep lazy-lock.json if you want exact versions, 
+# but usually it's fine to ignore /lazy/ directory)
+# Ignore the actual plugin code (Lazy.nvim downloads this)
+/lazy/
+
+# Ignore LSP/Formatter binaries (Mason downloads these)
+/mason/
+
+# Ignore temporary session/undo files
+undo/
+spell/
+.netrwhist
+*.swp
